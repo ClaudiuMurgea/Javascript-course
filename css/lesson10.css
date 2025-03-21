@@ -1,0 +1,55 @@
+.add-to-cart {
+  background-color:rgb(255, 216, 0);
+  padding:10px 50px;
+  border-radius:50px;
+  font-size:20px;
+  font-weight:bold;
+}
+.request-button {
+  font-size:18px;
+  padding:10px 15px;
+  border-radius:6px;
+  color:white;
+  font-weight:bold;
+  background-color: black;
+}
+.schedule-button {
+  padding:10px 15px;
+  border-radius:6px;
+  font-size:18px;
+  color: black;
+  font-weight:bold;
+  background-color: rgb(230, 230, 230);
+}
+.gaming-button {
+  font-size:18px;
+  padding:10px 15px;
+  border-radius:6px;
+  color:white;
+  font-weight:bold;
+  background-color: black;
+}
+.is-toggled {
+  padding:10px 15px;
+  border-radius:6px;
+  font-size:18px;
+  color: black;
+  font-weight:bold;
+  background-color: rgb(230, 230, 230);
+}
+.js-in {
+  font-size:20px;
+  padding:10px;
+}
+.calc {
+  padding:12px;
+  font-size:20px;
+  background-color: green;
+  color:white;
+  border:0;
+}
+.js-pp {
+  color:red;
+  font-weight:bold;
+  font-size:20px;
+}

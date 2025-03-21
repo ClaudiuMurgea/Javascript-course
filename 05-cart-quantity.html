@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Cart Quantity</title>
+</head>
+<body> 
+
+  <button onclick="
+    console.log(`Cart quantity: ${cartQuantity}`);
+  ">Show Quantity</button>
+  <button onclick="
+    cartQuantity++;
+    if(cartQuantity >= 10) {
+        cartQuantity = 10;
+        alert('The cart is full');
+      } else if (cartQuantity <= 0) {
+        cartQuantity = 0;
+        alert('Not enough items in the cart');
+      }
+    console.log(`Cart quantity: ${cartQuantity}`);
+    showQuantity();
+  ">Add to Cart</button>
+
+  <button onclick="
+    cartQuantity += 2;
+    if(cartQuantity >= 10) {
+        cartQuantity = 10;
+        alert('The cart is full');
+      } else if (cartQuantity <= 0) {
+        cartQuantity = 0;
+        alert('Not enough items in the cart');
+      }
+    console.log(`Cart quantity: ${cartQuantity}`);
+    showQuantity();
+  ">+2</button>
+
+  <button onclick="
+    cartQuantity += 3;
+    if(cartQuantity >= 10) {
+        cartQuantity = 10;
+        alert('The cart is full');
+      } else if (cartQuantity <= 0) {
+        cartQuantity = 0;
+        alert('Not enough items in the cart');
+      }
+    console.log(`Cart quantity: ${cartQuantity}`);
+    showQuantity();
+  ">+3</button>
+
+  <button onclick="
+    cartQuantity += 4;
+    if(cartQuantity >= 10) {
+        cartQuantity = 10;
+        alert('The cart is full');
+      } else if (cartQuantity <= 0) {
+        cartQuantity = 0;
+        alert('Not enough items in the cart');
+      }
+    console.log(`Cart quantity: ${cartQuantity}`);
+    showQuantity();
+  ">+4</button>
+
+  <button onclick="
+    cartQuantity+=5
+    if(cartQuantity >= 10) {
+        cartQuantity = 10;
+        alert('The cart is full');
+      } else if (cartQuantity <= 0) {
+        cartQuantity = 0;
+        alert('Not enough items in the cart');
+      }
+    console.log(`Cart quantity: ${cartQuantity}`);
+    showQuantity();
+  ">+5</button>
+
+  <button onclick="
+    cartQuantity-=2
+
+    if(cartQuantity >= 10) {
+        cartQuantity = 10;
+        alert('The cart is full');
+      } else if (cartQuantity <= 0) {
+        cartQuantity = 0;
+        alert('Not enough items in the cart');
+      }
+      console.log(`Cart quantity: ${cartQuantity}`);
+      showQuantity();
+  ">-2</button>
+
+  <button onclick="
+  cartQuantity-=3
+    if(cartQuantity >= 10) {
+        cartQuantity = 10;
+        alert('The cart is full');
+      } else if (cartQuantity <= 0) {
+        cartQuantity = 0;
+        alert('Not enough items in the cart');
+      }
+    console.log(`Cart quantity: ${cartQuantity}`);
+    showQuantity();
+  ">-3</button>
+
+  <button onclick="
+  cartQuantity--
+  if(cartQuantity >= 10) {
+      cartQuantity = 10;
+      console.log(cartQuantity);
+      alert('The cart is full');
+    } else if (cartQuantity <= 0) {
+      cartQuantity = 0;
+      console.log(cart.cartQuantity)
+      alert('Not enough items in the cart');
+    }
+    console.log(`Cart quantity: ${cartQuantity}`);
+    showQuantity();
+  ">Remove from cart</button>
+  <button onclick="
+    cartQuantity = 0;
+    console.log(`Cart was reset`);
+    showQuantity();
+  ">Reset Cart</button>
+  <p class="js-p"></p>
+  <script>
+      let cartQuantity = localStorage.getItem('cart') || 0;
+      document.querySelector('.js-p').innerHTML = `Cart quantity: ${localStorage.getItem('cart')}`
+      if(cartQuantity >= 10) {
+        cartQuantity = 10;
+        alert('The cart is full');
+      } else if (cartQuantity <= 0) {
+        cartQuantity = 0;
+        alert('Not enough items in the cart');
+      }
+      function showQuantity() {
+        localStorage.setItem('cart', cartQuantity) 
+        document.querySelector('.js-p').innerHTML = `Cart quantity: ${cartQuantity}`
+      }
+  </script>
+</body>
+</html>
